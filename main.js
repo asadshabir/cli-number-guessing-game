@@ -1,11 +1,11 @@
-const randomNumber = 5;
 import inquirer from "inquirer";
 import chalk from "chalk";
+const randomNumber = Math.floor(Math.random() * 10 + 1);
 const answers = await inquirer.prompt([
     {
         name: "numberGuessingGame",
         type: "number",
-        message: "Guess any rendom number"
+        message: "Guess any rendom number :"
     }
 ]);
 if (answers.numberGuessingGame === randomNumber) {
